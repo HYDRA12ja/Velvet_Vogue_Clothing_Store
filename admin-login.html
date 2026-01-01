@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Velvet Vogue</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+        VELVET VOGUE - ADMIN LOGIN PAGE (admin-login.html)
+        Aligns with Velvet Vogue Website Design Document
+        
+        Design Features:
+        - Centered login form with professional styling
+        - Username and password input fields
+        - Admin credentials displayed (UI only)
+        - Responsive design for all devices
+        - Form validation ready (UI structure)
+        - Elegant login interface matching brand aesthetic
+        
+        Admin Credentials (UI Display Only):
+        - Username: admin
+        - Password: 1234
+    -->
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">VELVET VOGUE</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin-login.html">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Admin Login Container -->
+    <div class="admin-login-container">
+        <form class="login-form" onsubmit="event.preventDefault(); handleLogin();">
+            <h2>Admin Portal</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem;">
+                Enter your credentials to access the admin dashboard
+            </p>
+
+            <!-- Username Field -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Remember Me Checkbox -->
+            <div class="form-group" style="display: flex; align-items: center;">
+                <input type="checkbox" id="remember" name="remember" style="width: auto; margin-right: 0.5rem;">
+                <label for="remember" style="margin: 0; color: #666;">Remember me</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Login</button>
+
+            <!-- Login Credentials Information -->
+            <div class="login-credentials">
+                <h4>📝 Demo Credentials</h4>
+                <p><strong>Username:</strong> admin</p>
+                <p><strong>Password:</strong> 1234</p>
+            </div>
+
+            <!-- Forgot Password Link -->
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="#" style="color: #8b6f47; text-decoration: none; font-size: 0.9rem;">Forgot your password?</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Quick Links -->
+                <section class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </section>
+
+                <!-- Customer Service -->
+                <section class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </section>
+
+                <!-- Company Info -->
+                <section class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </section>
+
+                <!-- Social Links -->
+                <section class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Footer Brand Section -->
+            <div class="footer-brand">
+                <div class="footer-brand-name">VELVET VOGUE</div>
+                <p class="footer-copyright">&copy; 2025 Velvet Vogue. All rights reserved. | Elegance Redefined. Fashion Elevated.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Handler - HTML/CSS Only (No Backend) -->
+    <script>
+        /* 
+            LOGIN HANDLER (UI Demo Only)
+            This is a simple client-side demonstration.
+            In a production environment, authentication should be handled server-side
+            with secure password hashing and session management.
+        */
+        function handleLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // Demo credentials
+            const validUsername = 'admin';
+            const validPassword = '1234';
+            
+            if (username === validUsername && password === validPassword) {
+                // Redirect to admin dashboard
+                window.location.href = 'admin-dashboard.html';
+            } else {
+                alert('Invalid username or password. Please try again.\n\nDemo Credentials:\nUsername: admin\nPassword: 1234');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Velvet Vogue</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+        VELVET VOGUE - ADMIN DASHBOARD PAGE (admin-dashboard.html)
+        Aligns with Velvet Vogue Website Design Document
+        
+        Design Features:
+        - Admin welcome section with branded header
+        - Multiple dashboard panels:
+          * Product Management
+          * Order Overview
+          * Sales Report
+          * Content Updates
+          * Customer Inquiries
+          * Inventory Status
+        - Status badges (active, pending)
+        - Responsive dashboard layout
+        - List items with action indicators
+        - Professional admin interface
+    -->
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">VELVET VOGUE</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin-login.html">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Admin Dashboard Container -->
+    <div class="dashboard-container">
+        
+        <!-- Dashboard Header -->
+        <div class="dashboard-header">
+            <h2>Welcome to Admin Dashboard</h2>
+            <p>Manage products, orders, and content for Velvet Vogue</p>
+            <div style="margin-top: 1.5rem;">
+                <a href="admin-login.html" class="btn btn-secondary">Logout</a>
+            </div>
+        </div>
+
+        <!-- Dashboard Panels Grid -->
+        <div class="dashboard-grid">
+
+            <!-- Panel 1: Product Management -->
+            <div class="dashboard-panel">
+                <h3>📦 Product Management</h3>
+                <p>Total Products: 20</p>
+                <ul class="dashboard-list">
+                    <li>
+                        <span>Women's Summer Dress</span>
+                        <span class="status-badge status-active">Active</span>
+                    </li>
+                    <li>
+                        <span>Men's Casual T-Shirt</span>
+                        <span class="status-badge status-active">Active</span>
+                    </li>
+                    <li>
+                        <span>Denim Jacket</span>
+                        <span class="status-badge status-active">Active</span>
+                    </li>
+                    <li>
+                        <span>Skinny Jeans</span>
+                        <span class="status-badge status-active">Active</span>
+                    </li>
+                    <li>
+                        <span>Leather Handbag</span>
+                        <span class="status-badge status-active">Active</span>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">View All Products</button>
+            </div>
+
+            <!-- Panel 2: Order Overview -->
+            <div class="dashboard-panel">
+                <h3>📋 Order Overview</h3>
+                <p>Total Orders This Month: 342</p>
+                <ul class="dashboard-list">
+                    <li>
+                        <span>Order #10234</span>
+                        <span class="status-badge status-active">Shipped</span>
+                    </li>
+                    <li>
+                        <span>Order #10233</span>
+                        <span class="status-badge status-active">Shipped</span>
+                    </li>
+                    <li>
+                        <span>Order #10232</span>
+                        <span class="status-badge status-pending">Processing</span>
+                    </li>
+                    <li>
+                        <span>Order #10231</span>
+                        <span class="status-badge status-active">Shipped</span>
+                    </li>
+                    <li>
+                        <span>Order #10230</span>
+                        <span class="status-badge status-pending">Processing</span>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">View All Orders</button>
+            </div>
+
+            <!-- Panel 3: Sales Report -->
+            <div class="dashboard-panel">
+                <h3>📊 Sales Report</h3>
+                <p>This Month's Revenue</p>
+                <div style="font-size: 2.5rem; color: #d4af37; font-weight: bold; margin: 1rem 0;">
+                    $28,450
+                </div>
+                <ul class="dashboard-list">
+                    <li>
+                        <span>Total Sales</span>
+                        <span>$28,450</span>
+                    </li>
+                    <li>
+                        <span>Total Orders</span>
+                        <span>342</span>
+                    </li>
+                    <li>
+                        <span>Average Order Value</span>
+                        <span>$83.15</span>
+                    </li>
+                    <li>
+                        <span>Conversion Rate</span>
+                        <span>3.2%</span>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">View Detailed Report</button>
+            </div>
+
+            <!-- Panel 4: Content Updates -->
+            <div class="dashboard-panel">
+                <h3>📝 Content Updates</h3>
+                <p>Recent Content Changes</p>
+                <ul class="dashboard-list">
+                    <li>
+                        <span>Homepage Banner Updated</span>
+                        <span class="status-badge status-active">Done</span>
+                    </li>
+                    <li>
+                        <span>New Product Collection Added</span>
+                        <span class="status-badge status-active">Done</span>
+                    </li>
+                    <li>
+                        <span>About Page Revised</span>
+                        <span class="status-badge status-pending">In Progress</span>
+                    </li>
+                    <li>
+                        <span>Blog Post: Spring Trends</span>
+                        <span class="status-badge status-pending">Draft</span>
+                    </li>
+                    <li>
+                        <span>Email Newsletter Scheduled</span>
+                        <span class="status-badge status-pending">Pending</span>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Manage Content</button>
+            </div>
+
+            <!-- Panel 5: Customer Inquiries -->
+            <div class="dashboard-panel">
+                <h3>💬 Customer Inquiries</h3>
+                <p>Recent Messages & Support Tickets</p>
+                <ul class="dashboard-list">
+                    <li>
+                        <span>Size Guide Question - Sarah M.</span>
+                        <span class="status-badge status-pending">Unanswered</span>
+                    </li>
+                    <li>
+                        <span>Return Request - John D.</span>
+                        <span class="status-badge status-active">Resolved</span>
+                    </li>
+                    <li>
+                        <span>Shipping Inquiry - Emma L.</span>
+                        <span class="status-badge status-pending">Unanswered</span>
+                    </li>
+                    <li>
+                        <span>Product Question - Michael B.</span>
+                        <span class="status-badge status-active">Resolved</span>
+                    </li>
+                    <li>
+                        <span>Bulk Order Inquiry - Business Co.</span>
+                        <span class="status-badge status-pending">Pending</span>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">View All Inquiries</button>
+            </div>
+
+            <!-- Panel 6: Inventory Status -->
+            <div class="dashboard-panel">
+                <h3>📦 Inventory Status</h3>
+                <p>Stock Levels Update</p>
+                <ul class="dashboard-list">
+                    <li>
+                        <span>Women's Summer Dress</span>
+                        <span style="color: #1b5e1b; font-weight: bold;">45 units</span>
+                    </li>
+                    <li>
+                        <span>Men's Casual T-Shirt</span>
+                        <span style="color: #1b5e1b; font-weight: bold;">67 units</span>
+                    </li>
+                    <li>
+                        <span>Denim Jacket</span>
+                        <span style="color: #856404; font-weight: bold;">12 units (Low)</span>
+                    </li>
+                    <li>
+                        <span>Leather Handbag</span>
+                        <span style="color: #1b5e1b; font-weight: bold;">28 units</span>
+                    </li>
+                    <li>
+                        <span>Evening Gown</span>
+                        <span style="color: #856404; font-weight: bold;">5 units (Low)</span>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Manage Inventory</button>
+            </div>
+
+        </div>
+
+        <!-- Additional Dashboard Section -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+            
+            <!-- Quick Stats -->
+            <div style="background-color: #ffffff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #8b6f47;">
+                <h4 style="color: #2c2c2c; margin-bottom: 1rem;">📈 Quick Stats</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #e8e3db;">
+                    <span style="color: #666;">Website Visitors:</span>
+                    <span style="font-weight: bold; color: #2c2c2c;">12,450</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #e8e3db;">
+                    <span style="color: #666;">New Customers:</span>
+                    <span style="font-weight: bold; color: #2c2c2c;">248</span>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <span style="color: #666;">Active Sessions:</span>
+                    <span style="font-weight: bold; color: #2c2c2c;">347</span>
+                </div>
+            </div>
+
+            <!-- Admin User Info -->
+            <div style="background-color: #ffffff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #8b6f47;">
+                <h4 style="color: #2c2c2c; margin-bottom: 1rem;">👤 Admin Account</h4>
+                <div style="margin-bottom: 1rem;">
+                    <p style="color: #666; margin-bottom: 0.5rem; font-size: 0.9rem;">Logged in as:</p>
+                    <p style="font-weight: bold; color: #2c2c2c; margin: 0;">Admin User</p>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <p style="color: #666; margin-bottom: 0.5rem; font-size: 0.9rem;">Last Login:</p>
+                    <p style="font-weight: bold; color: #2c2c2c; margin: 0;">January 2, 2025 at 10:45 AM</p>
+                </div>
+                <button class="btn btn-secondary" style="width: 100%;">Edit Profile</button>
+            </div>
+
+            <!-- System Status -->
+            <div style="background-color: #ffffff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #8b6f47;">
+                <h4 style="color: #2c2c2c; margin-bottom: 1rem;">⚙️ System Status</h4>
+                <div style="display: flex; align-items: center; margin-bottom: 1rem; gap: 1rem;">
+                    <div style="width: 12px; height: 12px; background-color: #1b5e1b; border-radius: 50%;"></div>
+                    <span style="color: #666;">Website Status: <strong style="color: #1b5e1b;">Online</strong></span>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 1rem; gap: 1rem;">
+                    <div style="width: 12px; height: 12px; background-color: #1b5e1b; border-radius: 50%;"></div>
+                    <span style="color: #666;">Database: <strong style="color: #1b5e1b;">Connected</strong></span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div style="width: 12px; height: 12px; background-color: #1b5e1b; border-radius: 50%;"></div>
+                    <span style="color: #666;">Server: <strong style="color: #1b5e1b;">Healthy</strong></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Quick Links -->
+                <section class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </section>
+
+                <!-- Customer Service -->
+                <section class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </section>
+
+                <!-- Company Info -->
+                <section class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </section>
+
+                <!-- Social Links -->
+                <section class="footer-section">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Footer Brand Section -->
+            <div class="footer-brand">
+                <div class="footer-brand-name">VELVET VOGUE</div>
+                <p class="footer-copyright">&copy; 2025 Velvet Vogue. All rights reserved. | Elegance Redefined. Fashion Elevated.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
